@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sweet Life Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/register.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+      </head>
+        
+        <body>
+          <nav>
+          <div class="topnav" id="navbar">
+            
+            <a href="index.html" >Home</a>
+            <a href="register.html" class="active">Register</a>
+            <a href="order.html">Order</a>
+            <a href="fearture.html">Fearture</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          </nav>
+          <header>
+            <div class="filter">
+              <h1>Sweet Life</h1> 
+                <div class="logo"><img src="images/logo.png" alt=""></div>
+                 <p>"Indulge in our creamy delights, one scoop at a time!"</p>
+        
+            </div>
+          </header>
+        <main class="register">
+          <h1>Register Form</h1>
+          <form id="registerform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+            <fieldset>
+              <legend>Register Account</legend>
+              <div class="input">
+                <label for="username">Username:</label>
+                <input id="username" type="text" name="username" placeholder="Enter your username">
+              </div>
+              <div class="input">
+                <label for="password1">Password:</label>
+                <input id="password1" type="password" name="password1" placeholder="Enter your password">
+              </div>
+              <div class="input">
+                <label for="password2">Confirm Password:</label>
+                <input id="password2" type="password" name="password2" placeholder="Confirm your password">
+              </div>
+              <div class="input">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+              </div>
+              
+              <div class="input">
+                <label>Your nationality:</label>
+                <select name="nationality" id="nation">
+                  <option value="Viet Nam" selected="selected">Viet Nam</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Japan">Japan</option>
+                  <option value="USA">USA</option>
+                  <option value="Australia">Australia</option>
+                </select>
+              </div>
+            </fieldset>
+
+
+
+            <fieldset>
+              <legend>Customers Information</legend>
+              <div class="input">
+                <label for="name">Your Name:</label>
+                <input id="name" type="text" name="name" placeholder="Enter your name">
+              </div>
+              <div class="inputradio">
+                <label>Gender:</label>
+                <input id="genm" type="radio" name="gender" value="Male">
+                <label for="genm">Male</label>
+                <input id="genf" type="radio" name="gender" value="Female">
+                <label for="genf">Female</label>
+              </div>
+              
+
+
+              <div class="inputradio">
+                <label>Favorite Ice-cream flavor:</label>
+                <input type="checkbox" id="ice-cream1" value="Chocolate ice cream with cherry" name="ice-cream1" >Chocolate
+                <input type="checkbox" id="ice-cream2" value="Blueberry-lavender ice cream" name="ice-cream2" >Blueberry-lavender
+                <input type="checkbox" id="ice-cream3" value="Crazy mint chocolate shake ice cream" name="ice-cream3">Mint chocolate
+                <input type="checkbox" id="ice-cream4" value="Candy ice cream" name="ice-cream4">Candy
+                <input type="checkbox" id="ice-cream5" value="Vegan Caramel Ice-cream" name="ice-cream5">Vegan Caramel
+              </div>
+            </fieldset>
+            <div class="buttonsubmit">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+        </main>
+
+
+        <footer>
+          <div>
+            <h2 class="brand">The Ice-cream Shop</h2>
+            <div class="social">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/minhlong1504"><i class="fab fa-facebook-f icon"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/lmlong.15/"><i class="fab fa-instagram icon"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UC-5aYq17_BidRBjLD2hLMAg"><i class="fab fa-youtube icon"></i></a>
+                </li>
+               
+              </ul>
+            </div>
+            <p>COS10005 - Web Development (COS10005)</p>
+            <p>Swinburne University of Technology</p>
+          </div>
+          </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

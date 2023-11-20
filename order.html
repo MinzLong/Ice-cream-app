@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sweet Life Order Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script src="js/order.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+        
+        <body>
+          <nav>
+          <div class="topnav" id="navbar">
+            
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="order.html" class="active">Order</a>
+            <a href="fearture.html">Fearture</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          </nav>
+          <header>
+            <div class="filter">
+              <h1>Sweet Life</h1> 
+                <div class="logo"><img src="images/logo.png" alt=""></div>
+                 <p>"Indulge in our creamy delights, one scoop at a time!"</p>
+        
+            </div>
+          </header>
+          
+          <main class="register">
+            <h1>Order Form</h1>
+            <form id="orderform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+              <fieldset>
+                <legend>Order Information</legend>
+
+                <div class="input">
+                  <label>Contact number:</label>
+                  <input id="Phone_number" type="text" name="Phone number" placeholder="Enter your phone number">
+                </div>
+                <div class="input">
+                  <label>Email for receipt</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+
+                <div class="inputradio">
+                  <label>Which type of delivery do you want ?</label>
+                  <input type="radio" onclick="delicheck();" name="take_order" id="Deli" value="delivery">
+                  <label>Delivery</label>
+                  <input type="radio" onclick="delicheck();" name="take_order" id="pick-up" value="pickup">
+                  <label>Pick up</label>
+                </div>
+
+                <div id="deliver_check" class="appear">
+                  <div class="input">
+                    <label>Delivery address:</label>
+                    <input id="delivery" type="text" name="delivery_address" placeholder="The address we will ship the product">
+                  </div>
+                  <div class="inputradio">
+                    <label>Billing address same as delivery address</label>
+                    <input id="address" type="checkbox" name="same_payment_location_as_delivery_address" value="yes" onclick="copy()">
+                  </div>
+                  <div class="input">
+                    <label>Billing address:</label>
+                    <input id="billing" type="text" name="payment_location" placeholder="The address you will pay for that product">
+                  </div>
+                </div>
+
+                <div class="inputradio">
+                  <label>Payment method:</label>
+                  <input type="radio"  id="pay_online" onclick="Onlinecheck();" name="pay" value="online"><label>Online payment</label>
+                  <input type="radio" id="pay_pick_up" onclick="Onlinecheck();" name="pay" value="pick-up"><label>Picking up</label>
+                </div>
+
+              <div id="online" class="appear">
+                
+                  <h2>Credit card information</h2>
+                  <div class="inputradio">
+                    <label>Choose an online payment method:</label>
+                    <input id="visa" type="radio" name="payment_type" value="Visa">
+                    <label>Visa</label>
+                    <input id="master" type="radio" name="payment_type" value="Mastercard">
+                    <label>Mastercard</label>
+                    <input id="american" type="radio" name="payment_type" value="American Express">
+                    <label>American Express</label>
+                  </div>
+
+                  <div class="input">
+                    <label class="input">Credit card:</label>
+                    <input id="Bank" type="text" name="Credit_card">
+                  </div>
+                </div>
+                </fieldset>
+              
+              <div class="buttonsubmit">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </main>
+        <footer>
+          <div>
+            <h2 class="brand">The Ice-cream Shop</h2>
+            <div class="social">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/minhlong1504"><i class="fab fa-facebook-f icon"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/lmlong.15/"><i class="fab fa-instagram icon"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UC-5aYq17_BidRBjLD2hLMAg"><i class="fab fa-youtube icon"></i></a>
+                </li>
+               
+              </ul>
+            </div>
+            <p>COS10005 - Web Development (COS10005)</p>
+            <p>Swinburne University of Technology</p>
+          </div>
+          </footer>
+    </body>
+</html>
